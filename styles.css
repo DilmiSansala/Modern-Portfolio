@@ -479,3 +479,199 @@ section{
     font-size: 2rem;
     font-weight: 500;
   }
+  /*contact*/
+  .contact {
+    padding: 6rem 2rem;
+    background-color:white;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px black;
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #0b0b0b;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  .submit-btn {
+    background: rgb(6, 6, 143);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+  
+  .submit-btn:hover {
+    background: rgb(6, 6, 143);
+  }
+  
+  /*footer*/
+  footer {
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    left: 0;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+
+  }
+  footer ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  footer ul li a{
+    font-weight: 600;
+    color: black;
+
+  }
+  .copyright{
+    font-size: 300;
+    margin-top: 2rem;
+  }
+ 
+  
+/*  hr {
+    background-color: #100b0b;
+    border: none;
+    height: 1px;
+    margin: 1rem 0;
+  }*/
+
+  /*responsive*/
+
+@media(max-width:1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-container{
+        gap: 3rem;
+    }
+    .experience-info{
+        flex-direction: column;
+
+    }
+    .input-box input{
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    } 
+    .input input::placeholder{
+        font-size: 2.5rem;
+    }
+    .input-box{
+        font-size: 2.5rem;
+    }  
+}
+@media(max-width:768px){
+
+    header{
+        gap: 1rem;
+        padding: 1rem 1rem;
+
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .visit-btn{
+        display: none;
+    }
+    .about-container
+    {
+        flex-direction: column;
+    }
+    .input-box input{
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+    .input input::placeholder{
+        font-size: 1.5rem;
+    }
+    .input-box i{
+       display: none;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experience-info img{
+        width: 70vw;
+    }
+
+}
+@media(max-width:600px){
+
+    header #menu-icon{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 3rem;
+        display: none;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    header{
+        padding: 1rem 5rem;
+        gap: 8rem;
+
+    }
+    header.logo{
+        font-size: 1.5rem;
+    }
+    .about-container{
+        width: 80vw;
+
+    }
+    .input-box input{
+        padding: 0.5rem 3rem;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    .input-box input::placeholder{
+        font-size: 1.5rem;
+    }
+    footer ul{
+        gap: 1rem;
+    }
+}
+   
