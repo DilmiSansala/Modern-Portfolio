@@ -591,6 +591,14 @@ section{
 }
 @media(max-width:768px){
 
+    .container1{
+        width : 400px;
+        margin-bottom : 2rem;
+    }
+    #professional-skills{
+        display: none;
+    }
+
     header{
         gap: 1rem;
         padding: 1rem 1rem;
